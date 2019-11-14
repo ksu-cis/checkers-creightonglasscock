@@ -9,9 +9,11 @@ namespace TicTacToe.Pages
 {
     public class IndexModel : PageModel
     {
+        public Game Game { get; set; }
+
         public void OnGet()
         {
-
+            Game = new Game();
         }
     }
 }
